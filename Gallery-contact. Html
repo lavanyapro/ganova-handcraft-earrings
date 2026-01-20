@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ganova Handcraft earrings | Gallery & Contact</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Ganova Handcraft earrings</div>
+    <nav class="nav">
+      <a class="navlink" href="about.html">About & Shop</a>
+      <a class="navlink active" href="gallery-contact.html">Gallery & Contact</a>
+      <a class="navlink" href="#" id="logoutBtn">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Earrings Gallery</h1>
+      <p class="muted">Put your photos in <code>assets/images</code> and update the list in <code>assets/js/main.js</code>.</p>
+
+      <div class="gallery" id="galleryGrid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Contact Us</h2>
+      <p class="muted">This opens your email app and fills the message.</p>
+
+      <form id="contactForm" class="form">
+        <label>
+          Name
+          <input id="cName" type="text" required>
+        </label>
+
+        <label>
+          Email
+          <input id="cEmail" type="email" required>
+        </label>
+
+        <label>
+          Message
+          <textarea id="cMessage" rows="5" required></textarea>
+        </label>
+
+        <button class="btn" type="submit">Send message</button>
+      </form>
+
+      <div id="contactSuccess" class="success hidden">Opening your email app…</div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
